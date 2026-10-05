@@ -9,9 +9,6 @@ RUN chmod +x /entrypoint.sh
 
 ENV UVICORN_HOST=0.0.0.0 \
     UVICORN_PORT=8000 \
-    UVICORN_SSL_CERTFILE=/var/lib/pasarguard/certs/ssl_cert.pem \
-    UVICORN_SSL_KEYFILE=/var/lib/pasarguard/certs/ssl_key.pem \
-    UVICORN_SSL_CA_TYPE=private \
     ALLOWED_ORIGINS=* \
     ENABLE_RECORDING_NODES_STATS=True
 
